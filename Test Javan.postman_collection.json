@@ -170,6 +170,114 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Request Hapus Desa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/desa/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Create Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distric_code\": \"110101\",\r\n    \"nama\": \"pesantren\",\r\n    \"meta\": [\r\n        {\r\n            \"long\":1212,\r\n            \"lat\":1231,\r\n            \"post\":543543\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Get Desa",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Request Update Data Desa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distric_code\": \"110101\",\r\n    \"nama\": \"pesantren kilat\",\r\n    \"meta\": [\r\n        {\r\n            \"long\":1212,\r\n            \"lat\":1231,\r\n            \"post\":543543\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/desa/83813",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"83813"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FamilyTreeController;
+use App\Http\Controllers\IndonesiaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -50,3 +51,11 @@ Route::get('/get-all-family/{id}', [FamilyTreeController::class, 'getAllFamily']
 
 // update data family
 Route::put('/update-family/{id}', [FamilyTreeController::class, 'updateFamilyTree']);
+
+
+// function to get data
+Route::get('/desa', [IndonesiaController::class, 'getAllDesa']);
+Route::post('/desa', [IndonesiaController::class, 'createDesa']);
+Route::put('/desa/{id}', [IndonesiaController::class, 'updateDesa']);
+Route::get('/desa/{id}', [IndonesiaController::class, 'getDesa']);
+Route::delete('/desa/{id}', [IndonesiaController::class, 'deleteDesa']);

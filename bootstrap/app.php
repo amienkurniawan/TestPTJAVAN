@@ -41,6 +41,11 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+// $app->register(Laravolt\Indonesia\ServiceProvider::class);
+
+// class_alias(Laravolt\Indonesia\Facade::class, 'Indonesia');
+
+// $app->configure('laravolt');
 /*
 |--------------------------------------------------------------------------
 | Return The Application
